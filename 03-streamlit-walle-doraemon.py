@@ -15,7 +15,7 @@ def load_model():
     # Windows 路径兼容性处理
     temp = None
     if sys.platform == "win32":
-        temp = pathlib.PosixPath
+       # temp = pathlib.PosixPath
         pathlib.PosixPath = pathlib.WindowsPath
     
     try:
